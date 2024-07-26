@@ -1,25 +1,35 @@
-<mat-toolbar class="mat-elevation-z8">
-  <button mat-icon-button aria-label="Menu button" (click)="drawer.toggle()">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>Resume</span>
-  <button
-    mat-icon-button
-    (click)="toggleTheme()"
-    matTooltip="Switch theme"
-    aria-label="Switch theme button"
-  >
-    @if (isDarkMode) {
-    <mat-icon>light_mode</mat-icon>
-    } @else {
-    <mat-icon>dark_mode</mat-icon>
-    }
-  </button>
+<mat-toolbar class="main-header">
+  <div class="left-side">
+    <button mat-icon-button aria-label="Menu button" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="app-title">{{ title }}</span>
+  </div>
+  <div class="middle-side"></div>
+  <div class="right-side">
+    <button
+      mat-icon-button
+      (click)="toggleTheme()"
+      matTooltip="Switch theme"
+      aria-label="Switch theme button"
+    >
+      @if (isDarkMode) {
+      <mat-icon>light_mode</mat-icon>
+      } @else {
+      <mat-icon>dark_mode</mat-icon>
+      }
+    </button>
+  </div>
 </mat-toolbar>
-<router-outlet />
+<mat-divider></mat-divider>
 <mat-drawer-container class="main-container" autosize>
   <mat-drawer #drawer class="main-sidenav" mode="side" opened="true">
-    <p>Auto-resizing sidenav</p>
+    <app-side-menu></app-side-menu>
   </mat-drawer>
-  <div class="main-sidenav-content">Main content</div>
+  <div class="main-sidenav-content">
+    <mat-divider [vertical]="true"></mat-divider>
+    <div class="main-content">
+      <h1>Main content</h1>
+    </div>
+  </div>
 </mat-drawer-container>

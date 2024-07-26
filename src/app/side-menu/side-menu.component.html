@@ -1,0 +1,15 @@
+<mat-nav-list>
+  @for (item of sections; track $index) {
+  <mat-list-item
+    [activated]="item.isActive!"
+    (click)="onItemClicked(item)"
+    class="item"
+    [class]="{ active: item.isActive }"
+  >
+    <button mat-button class="item-btn">
+      <mat-icon>{{ item.icon }}</mat-icon>
+      <a>{{ item.name }}</a>
+    </button>
+  </mat-list-item>
+  }
+</mat-nav-list>

@@ -5,8 +5,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDividerModule } from '@angular/material/divider';
 
 import { ThemeType } from './types';
+import { SideMenuComponent } from './side-menu/side-menu.component';
+import { appTitle } from './constants';
 
 @Component({
   selector: 'app-root',
@@ -17,17 +20,18 @@ import { ThemeType } from './types';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatDividerModule,
     MatTooltipModule,
+    SideMenuComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'Resume';
+  title = appTitle;
   @HostBinding('class')
   currentTheme: ThemeType =
     (localStorage.getItem('theme') as ThemeType) || ThemeType.Dark;
-
   isDarkMode: boolean = this.currentTheme === ThemeType.Dark;
 
   toggleTheme() {

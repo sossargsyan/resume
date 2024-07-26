@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+  <button mat-icon-button aria-label="Menu button">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Resume</span>
+  <button mat-icon-button (click)="toggleTheme()" aria-label="Switch theme">
+    @if (isDarkMode) {
+    <mat-icon>light_mode</mat-icon>
+    } @else {
+    <mat-icon>dark_mode</mat-icon>
+    }
+  </button>
+</mat-toolbar>
+<router-outlet />

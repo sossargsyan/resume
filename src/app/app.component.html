@@ -1,9 +1,14 @@
-<mat-toolbar color="primary">
-  <button mat-icon-button aria-label="Menu button">
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button aria-label="Menu button" (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
   <span>Resume</span>
-  <button mat-icon-button (click)="toggleTheme()" aria-label="Switch theme">
+  <button
+    mat-icon-button
+    (click)="toggleTheme()"
+    matTooltip="Switch theme"
+    aria-label="Switch theme button"
+  >
     @if (isDarkMode) {
     <mat-icon>light_mode</mat-icon>
     } @else {
@@ -12,3 +17,9 @@
   </button>
 </mat-toolbar>
 <router-outlet />
+<mat-drawer-container class="main-container" autosize>
+  <mat-drawer #drawer class="main-sidenav" mode="side" opened="true">
+    <p>Auto-resizing sidenav</p>
+  </mat-drawer>
+  <div class="main-sidenav-content">Main content</div>
+</mat-drawer-container>

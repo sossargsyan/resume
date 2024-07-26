@@ -1,5 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -12,6 +13,7 @@ import { ThemeType } from './types';
   standalone: true,
   imports: [
     RouterOutlet,
+    MatSidenavModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
@@ -30,7 +32,6 @@ export class AppComponent {
 
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
-    console.log(this.isDarkMode);
     if (this.isDarkMode) {
       localStorage.setItem('theme', ThemeType.Dark);
       this.currentTheme = ThemeType.Dark;

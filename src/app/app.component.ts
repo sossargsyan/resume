@@ -7,9 +7,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
 
+import { appTitle } from './constants';
 import { ThemeType } from './types';
 import { SideMenuComponent } from './side-menu/side-menu.component';
-import { appTitle } from './constants';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ import { appTitle } from './constants';
     MatDividerModule,
     MatTooltipModule,
     SideMenuComponent,
+    AboutComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

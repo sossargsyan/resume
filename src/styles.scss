@@ -36,5 +36,8 @@ body {
   // Apply the light theme only when the user prefers light themes.
   .light-theme {
     @include mat.all-component-colors($light-theme);
+    .main-header {
+      background-color: #d7e3ff;
+    }
   }
 }

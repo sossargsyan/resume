@@ -30,8 +30,14 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  .devicon {
+    font-size: 6rem;
+  }
   // Apply the dark theme by default
   @include mat.all-component-themes($dark-theme);
+  .main-header {
+    background-color: #810081;
+  }
 
   // Apply the light theme only when the user prefers light themes.
   .light-theme {

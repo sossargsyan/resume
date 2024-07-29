@@ -12,6 +12,7 @@ import { Resume, ThemeType } from './types';
 import { JsonReaderService } from './services/json-reader.service';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { AboutComponent } from './components/about/about.component';
+import { TechnologiesComponent } from './components/technologies/technologies.component';
 
 @Component({
   selector: 'app-root',
@@ -24,9 +25,10 @@ import { AboutComponent } from './components/about/about.component';
     MatIconModule,
     MatDividerModule,
     MatTooltipModule,
+    MatProgressBarModule,
     SideMenuComponent,
     AboutComponent,
-    MatProgressBarModule,
+    TechnologiesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

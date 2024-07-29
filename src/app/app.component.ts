@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
@@ -6,11 +6,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
-import { appTitle } from './constants';
-import { ThemeType } from './types';
-import { SideMenuComponent } from './side-menu/side-menu.component';
-import { AboutComponent } from './about/about.component';
+import { Resume, ThemeType } from './types';
+import { JsonReaderService } from './services/json-reader.service';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { AboutComponent } from './components/about/about.component';
 
 @Component({
   selector: 'app-root',
@@ -25,16 +26,20 @@ import { AboutComponent } from './about/about.component';
     MatTooltipModule,
     SideMenuComponent,
     AboutComponent,
+    MatProgressBarModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = appTitle;
+export class AppComponent implements OnInit {
   @HostBinding('class')
   currentTheme: ThemeType =
     (localStorage.getItem('theme') as ThemeType) || ThemeType.Dark;
   isDarkMode: boolean = this.currentTheme === ThemeType.Dark;
+  loading: boolean = true;
+  resumeData!: Resume;
+
+  constructor(private _jsonReaderService: JsonReaderService) {}
 
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
@@ -45,5 +50,12 @@ export class AppComponent {
       localStorage.setItem('theme', ThemeType.Light);
       this.currentTheme = ThemeType.Light;
     }
+  }
+
+  ngOnInit(): void {
+    this._jsonReaderService.getInfo().subscribe((data) => {
+      this.resumeData = data;
+      this.loading = false;
+    });
   }
 }

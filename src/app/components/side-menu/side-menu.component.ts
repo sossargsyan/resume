@@ -3,8 +3,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
-import { MenuItem } from '../types';
-import { sections } from '../constants';
+import { MenuItem } from '../../types';
+import { sections } from '../../constants';
 
 @Component({
   selector: 'app-side-menu',

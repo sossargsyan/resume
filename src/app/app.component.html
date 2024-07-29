@@ -3,7 +3,7 @@
     <button mat-icon-button aria-label="Menu button" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span class="app-title">{{ title }}</span>
+    <span class="app-title">{{ resumeData.title }}</span>
   </div>
   <div class="middle-side"></div>
   <div class="right-side">
@@ -29,7 +29,11 @@
   <div class="main-sidenav-content">
     <mat-divider [vertical]="true"></mat-divider>
     <div class="main-content">
-      <app-about></app-about>
+      @if (loading) {
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      } @else {
+      <app-about [data]="resumeData.about"></app-about>
+      }
     </div>
   </div>
 </mat-drawer-container>

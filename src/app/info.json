@@ -1,0 +1,158 @@
+{
+  "title": "Sos Sargsyan's Resume",
+  "about": {
+    "fullName": "Sos Sargsyan",
+    "profession": "Full-stack Software Engineer",
+    "email": "sossargsyan@gmail.com",
+    "phone": "+374 44 28 14 40",
+    "addresses": ["Shushi, Artsakh, Armenia", "Byureghavan, Kotayk, Armenia"],
+    "summary": "Experienced and results-oriented Full-Stack Software Engineer with over 8 years of experience in designing, developing, and maintaining enterprise-level applications. Skilled in both front-end and back-end development, adept at implementing and optimizing scalable solutions. Proven ability to lead cross-functional teams and deliver high-quality software projects on time. Extensive experience in developing web applications for clients in the USA, EU, Australia and Armenia."
+  },
+  "technologies": [
+    {
+      "name": "Programming Languages",
+      "items": ["JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+    },
+    {
+      "name": "Frameworks",
+      "items": ["React", "Angular", "Node.js", "Express.js"]
+    },
+    {
+      "name": "Preprocessors",
+      "items": ["Sass", "Less"]
+    },
+    {
+      "name": "Databases",
+      "items": ["MongoDB", "MySQL", "PostgreSQL"]
+    },
+    {
+      "name": "Tools",
+      "items": [
+        "Git",
+        "Webpack",
+        "Babel",
+        "Jest",
+        "Mocha",
+        "Chai",
+        "Docker",
+        "GitHub",
+        "GitLab",
+        "Bitbucket",
+        "StackBlitz",
+        "Vercel",
+        "Firebase",
+        "MongoDB Atlas",
+        "MySQL Workbench",
+        "Postman",
+        "Visual Studio Code",
+        "Vim"
+      ]
+    },
+    {
+      "name": "Methodologies",
+      "items": ["Agile", "Scrum", "Kanban"]
+    },
+    {
+      "name": "Operating Systems",
+      "items": ["Linux", "Windows", "macOS"]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "company": "Company A",
+      "location": "Yerevan, Armenia",
+      "startDate": "2018-01-01",
+      "endDate": "2020-12-31",
+      "description": "Developed web applications using React, Node.js, and MongoDB."
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Company B",
+      "location": "Yerevan, Armenia",
+      "startDate": "2016-01-01",
+      "endDate": "2017-12-31",
+      "description": "Developed web applications using Angular, Java, and MySQL."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science",
+      "major": "Computer Science",
+      "school": "State Engineering University of Armenia",
+      "location": "Yerevan, Armenia",
+      "startDate": "2012-09-01",
+      "endDate": "2016-06-30"
+    },
+    {
+      "degree": "Bachelor of Science",
+      "major": "Computer Science",
+      "school": "State Engineering University of Armenia",
+      "location": "Yerevan, Armenia",
+      "startDate": "2012-09-01",
+      "endDate": "2016-06-30"
+    }
+  ],
+  "skills": [
+    {
+      "name": "JavaScript",
+      "level": "Expert"
+    },
+    {
+      "name": "React",
+      "level": "Expert"
+    },
+    {
+      "name": "Node.js",
+      "level": "Expert"
+    },
+    {
+      "name": "MongoDB",
+      "level": "Expert"
+    },
+    {
+      "name": "Angular",
+      "level": "Intermediate"
+    },
+    {
+      "name": "Java",
+      "level": "Intermediate"
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Armenian",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Fluent"
+    },
+    {
+      "name": "Russian",
+      "level": "Fluent"
+    }
+  ],
+  "interests": ["Football", "Hiking", "Cooking"],
+  "contacts": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/sossargsyan",
+      "icon": "github"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/sossargsyan",
+      "icon": "linkedin"
+    },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/sos.sargsyan.180",
+      "icon": "facebook"
+    }
+  ]
+}

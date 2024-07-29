@@ -1,5 +1,3 @@
-export const appTitle = `Sos Sargsyan's resume`;
-
 export const sections = [
   {
     name: 'About',
@@ -13,9 +11,9 @@ export const sections = [
     route: 'technologies',
   },
   {
-    name: 'Projects',
+    name: 'Experience',
     icon: 'work',
-    route: 'projects',
+    route: 'experience',
   },
   {
     name: 'Education',
@@ -26,6 +24,16 @@ export const sections = [
     name: 'Skills',
     icon: 'build',
     route: 'skills',
+  },
+  {
+    name: 'Languages',
+    icon: 'translate',
+    route: 'languages',
+  },
+  {
+    name: 'Interests',
+    icon: 'favorite',
+    route: 'interests',
   },
   {
     name: 'Contact',

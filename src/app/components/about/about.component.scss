@@ -1,0 +1,36 @@
+.about-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .box {
+    &-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      .avatar-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+      }
+      .info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .info-item {
+          display: flex;
+          gap: 16px;
+          .item-key {
+            width: 100px;
+            display: flex;
+            justify-content: flex-end;
+          }
+          .item-value {
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

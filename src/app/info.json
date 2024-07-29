@@ -11,50 +11,149 @@
   "technologies": [
     {
       "name": "Programming Languages",
-      "items": ["JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+      "items": [
+        {
+          "name": "JavaScript",
+          "icon": "javascript-plain"
+        },
+        {
+          "name": "TypeScript",
+          "icon": "typescript-plain"
+        },
+        {
+          "name": "HTML",
+          "icon": "html5-plain"
+        },
+        {
+          "name": "CSS",
+          "icon": "css3-plain"
+        },
+        {
+          "name": "SQL",
+          "icon": "azuresqldatabase-plain"
+        }
+      ]
     },
     {
       "name": "Frameworks",
-      "items": ["React", "Angular", "Node.js", "Express.js"]
-    },
-    {
-      "name": "Preprocessors",
-      "items": ["Sass", "Less"]
+      "items": [
+        {
+          "name": "React",
+          "icon": "react-original"
+        },
+        {
+          "name": "Angular",
+          "icon": "angularjs-plain"
+        },
+        {
+          "name": "Node.js",
+          "icon": "nodejs-plain"
+        },
+        {
+          "name": "Express.js",
+          "icon": "express-original"
+        }
+      ]
     },
     {
       "name": "Databases",
-      "items": ["MongoDB", "MySQL", "PostgreSQL"]
+      "items": [
+        {
+          "name": "MongoDB",
+          "icon": "mongodb-plain"
+        },
+        {
+          "name": "MySQL",
+          "icon": "mysql-original"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "postgresql-plain"
+        }
+      ]
+    },
+    {
+      "name": "Preprocessors",
+      "items": [
+        {
+          "name": "Sass",
+          "icon": "sass-original"
+        },
+        {
+          "name": "Less",
+          "icon": "less-plain-wordmark"
+        }
+      ]
     },
     {
       "name": "Tools",
       "items": [
-        "Git",
-        "Webpack",
-        "Babel",
-        "Jest",
-        "Mocha",
-        "Chai",
-        "Docker",
-        "GitHub",
-        "GitLab",
-        "Bitbucket",
-        "StackBlitz",
-        "Vercel",
-        "Firebase",
-        "MongoDB Atlas",
-        "MySQL Workbench",
-        "Postman",
-        "Visual Studio Code",
-        "Vim"
+        {
+          "name": "Git",
+          "icon": "git-plain"
+        },
+        {
+          "name": "Docker",
+          "icon": "docker-plain"
+        },
+        {
+          "name": "GitHub",
+          "icon": "github-original"
+        },
+        {
+          "name": "GitLab",
+          "icon": "gitlab-plain"
+        },
+        {
+          "name": "Bitbucket",
+          "icon": "bitbucket-original"
+        },
+        {
+          "name": "Vercel",
+          "icon": "vercel-original"
+        },
+        {
+          "name": "Jest",
+          "icon": "jest-plain"
+        },
+        {
+          "name": "Mocha",
+          "icon": "mocha-plain"
+        },
+        {
+          "name": "Firebase",
+          "icon": "firebase-plain"
+        },
+        {
+          "name": "Postman",
+          "icon": "postman-plain"
+        },
+        {
+          "name": "VS Code",
+          "icon": "vscode-plain"
+        },
+        {
+          "name": "Vim",
+          "icon": "vim-plain"
+        }
       ]
     },
     {
-      "name": "Methodologies",
-      "items": ["Agile", "Scrum", "Kanban"]
-    },
-    {
       "name": "Operating Systems",
-      "items": ["Linux", "Windows", "macOS"]
+      "items": [
+        {
+          "name": "Linux",
+          "icon": "linux-plain"
+        },
+        {
+          "name": "Windows",
+          "icon": "windows11-original"
+        },
+        {
+          "name": "macOS",
+          "icon": "apple-original"
+        }
+      ]
     }
   ],
   "experience": [

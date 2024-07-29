@@ -19,9 +19,13 @@ export interface About {
   summary: string;
 }
 
+export interface TechItem {
+  name: string;
+  icon: string;
+}
 export interface Technology {
   name: string;
-  items: string[];
+  items: TechItem[];
 }
 
 export interface Experience {

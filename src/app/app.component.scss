@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #810081;
   .left-side {
     display: flex;
     align-items: center;
@@ -22,10 +21,10 @@
     display: flex;
     height: 100%;
     .main-content {
-      flex: 1;
-      overflow: auto;
       padding: 24px;
+      display: flex;
       flex-direction: column;
+      gap: 24px;
     }
   }
 }

@@ -36,8 +36,8 @@ export const sections = [
     route: 'interests',
   },
   {
-    name: 'Contact',
+    name: 'Contacts',
     icon: 'email',
-    route: 'contact',
+    route: 'contacts',
   },
 ];

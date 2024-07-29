@@ -1,6 +1,6 @@
 {
-  "name": "sos-cv",
-  "version": "0.0.0",
+  "name": "resume",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

@@ -3,7 +3,6 @@ export const sections = [
     name: 'About',
     icon: 'person',
     route: 'about',
-    isActive: true,
   },
   {
     name: 'Technologies',

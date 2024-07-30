@@ -13,6 +13,7 @@ import { JsonReaderService } from './services/json-reader.service';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { AboutComponent } from './components/about/about.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
+import { experienceComponent } from './components/experience/experience.component';
 
 @Component({
   selector: 'app-root',
@@ -29,6 +30,7 @@ import { TechnologiesComponent } from './components/technologies/technologies.co
     SideMenuComponent,
     AboutComponent,
     TechnologiesComponent,
+    experienceComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

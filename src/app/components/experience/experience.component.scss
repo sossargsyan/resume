@@ -1,0 +1,14 @@
+.experience-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .sub-heading {
+      display: flex;
+      gap: 16px;
+    }
+  }
+}

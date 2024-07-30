@@ -29,11 +29,12 @@ export interface Technology {
 
 export interface Experience {
   title: string;
-  company: string;
-  location: string;
   startDate: string;
   endDate: string;
+  sphere: string;
   description: string;
+  roles: string[];
+  technologies: string[];
 }
 
 export interface Education {
@@ -43,11 +44,6 @@ export interface Education {
   location: string;
   startDate: string;
   endDate: string;
-}
-
-export interface Skill {
-  name: string;
-  level: string;
 }
 
 export interface Language {
@@ -67,7 +63,6 @@ export interface Resume {
   technologies: Technology[];
   experience: Experience[];
   education: Education[];
-  skills: Skill[];
   languages: Language[];
   interests: string[];
   contacts: Contact[];

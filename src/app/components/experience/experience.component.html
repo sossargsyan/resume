@@ -1,0 +1,36 @@
+<h1>Experience</h1>
+<mat-card appearance="outlined">
+  <mat-card-content class="experience-card-content">
+    @for (item of data; track $index) {
+    <div class="info-container">
+      <h2>{{ item.title }}</h2>
+      <div class="sub-heading">
+        <span>{{ item.startDate }} - {{ item.endDate }}</span>
+        <mat-divider [vertical]="true"></mat-divider>
+        <span>{{ item.sphere }}</span>
+      </div>
+      <p>{{ item.description }}</p>
+      <div>
+        <b>Roles/Responsibilities:</b>
+        <ul>
+          @for (role of item.roles; track $index) {
+          <li>{{ role }}</li>
+          }
+        </ul>
+      </div>
+      <div>
+        <p>
+          <b>Technologies:</b>
+        </p>
+        <mat-chip-set aria-label="Technology">
+          @for (tech of item.technologies; track $index) {
+          <mat-chip>{{ tech }}</mat-chip>
+          }
+        </mat-chip-set>
+      </div>
+    </div>
+    @if ($index < data.length - 1) {
+    <mat-divider></mat-divider>
+    } }
+  </mat-card-content>
+</mat-card>

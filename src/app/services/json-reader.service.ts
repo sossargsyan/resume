@@ -7,7 +7,7 @@ import myInfo from '../info.json';
   providedIn: 'root',
 })
 export class JsonReaderService {
-  // TODO: Ger rid of any
+  // TODO: Get rid of any
   public getInfo(): Observable<any> {
     return of(myInfo);
   }

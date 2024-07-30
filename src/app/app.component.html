@@ -32,7 +32,9 @@
       @if (loading) {
       <mat-progress-bar mode="indeterminate"></mat-progress-bar>
       } @else {
+      <div id="about"></div>
       <app-about [data]="resumeData.about"></app-about>
+      <div id="technologies"></div>
       <app-technologies [data]="resumeData.technologies"></app-technologies>
       }
     </div>

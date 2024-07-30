@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { ActivatedRoute } from '@angular/router';
 
 import { MenuItem } from '../../types';
 import { sections } from '../../constants';
@@ -13,15 +14,22 @@ import { sections } from '../../constants';
   templateUrl: './side-menu.component.html',
   styleUrl: './side-menu.component.scss',
 })
-export class SideMenuComponent {
+export class SideMenuComponent implements OnInit {
   sections: MenuItem[] = sections;
+  activeSection: string = sections[0].route;
+
+  constructor(private _route: ActivatedRoute) {}
 
   onItemClicked(item: MenuItem) {
-    this.sections = this.sections.map((section) => {
-      if (section.name === item.name) {
-        return { ...section, isActive: true };
+    location.href = `#${item.route}`;
+  }
+
+  ngOnInit(): void {
+    this._route.fragment.subscribe((fragment) => {
+      if (fragment) {
+        this.activeSection = fragment;
+        location.href = `#${this.activeSection}`;
       }
-      return { ...section, isActive: false };
     });
   }
 }

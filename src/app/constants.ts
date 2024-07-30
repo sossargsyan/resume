@@ -20,11 +20,6 @@ export const sections = [
     route: 'education',
   },
   {
-    name: 'Skills',
-    icon: 'build',
-    route: 'skills',
-  },
-  {
     name: 'Languages',
     icon: 'translate',
     route: 'languages',

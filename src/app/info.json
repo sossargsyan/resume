@@ -158,20 +158,157 @@
   ],
   "experience": [
     {
-      "title": "Software Engineer",
-      "company": "Company A",
-      "location": "Yerevan, Armenia",
-      "startDate": "2018-01-01",
-      "endDate": "2020-12-31",
-      "description": "Developed web applications using React, Node.js, and MongoDB."
+      "title": "Web and Mobile applications development",
+      "startDate": "Jan 2024",
+      "endDate": "Mar 2024",
+      "sphere": "Full-stack Web Development",
+      "description": "Integration of an agriculture automation app, connecting it seamlessly with various technologies. This empowers farmers to automate tasks, optimize resource use, and remotely manage processes for improved crop yields. My role spanned user-friendly interface design, back-end API development, and robust security measures. The result is a holistic solution enhancing the overall user experience and promoting sustainable agriculture.",
+      "roles": [
+        "Interface Design: Creating intuitive and user-friendly interfaces for real-time monitoring of agricultural processes.",
+        "API Development: Designing and implementing back-end APIs to integrate the application with diverse agricultural technologies such as sensors, drones, and automated machinery.",
+        "Security Implementation: Ensuring the security of sensitive agricultural data by implementing robust measures to safeguard information and maintain the integrity of automated processes."
+      ],
+      "technologies": [
+        "React",
+        "Redux Toolkit",
+        "MUI",
+        "Node.js",
+        "Express.js",
+        "Docker",
+        "MongoDB",
+        "Mongoose",
+        "Modbus",
+        "Ionic",
+        "Capacitor"
+      ]
     },
     {
-      "title": "Software Engineer",
-      "company": "Company B",
-      "location": "Yerevan, Armenia",
-      "startDate": "2016-01-01",
-      "endDate": "2017-12-31",
-      "description": "Developed web applications using Angular, Java, and MySQL."
+      "title": "Web and Mobile applications development",
+      "startDate": "Nov 2021",
+      "endDate": "Dec 2023",
+      "sphere": "Full-stack Web Development",
+      "description": "Development of a marketplace platform designed for the business owners and clients which allows users to register their own businesses and sell the products to the end users.",
+      "roles": [
+        "Software design",
+        "Development of the required UI features for the web and mobile apps",
+        "Developing the Rest API",
+        "Integrating web and mobile apps with APIs",
+        "Authentication/Authorization",
+        "Create unite & integration tests. Increase code coverage",
+        "Optimizations/bug fixes."
+      ],
+      "technologies": [
+        "React",
+        "React Admin",
+        "Tailwind",
+        "Zustand",
+        "JavaScript",
+        "Jest",
+        "Node.js",
+        "Express.js",
+        "Docker",
+        "MongoDB",
+        "Mongoose",
+        "Ionic",
+        "Capacitor"
+      ]
+    },
+    {
+      "title": "Fitness Web Platform",
+      "startDate": "Aug 2021",
+      "endDate": "Nov 2021",
+      "sphere": "Web Frontend Development",
+      "description": "Development of a streaming platform designed for fitness and wellness which allows users to subscribe video workouts, various digital contents and meal plans.",
+      "roles": [
+        "Software design",
+        "Create unite & integration tests. Increase code coverage",
+        "Optimizations/bug fixes",
+        "Developing the required UI features for the web page",
+        "Integrating web app with new content APIs"
+      ],
+      "technologies": [
+        "React",
+        "Redux",
+        "Context",
+        "JavaScript",
+        "Jest",
+        "Enzyme",
+        "Webpack",
+        "Node.js"
+      ]
+    },
+    {
+      "title": "Environmental protection and anti-carbon emission platform",
+      "startDate": "Jun 2021",
+      "endDate": "Aug 2021",
+      "sphere": "Backend Rest API Development",
+      "description": "Development of a platform to help individuals take positive action to reduce their personal carbon footprint and their impact on the environment.",
+      "roles": [
+        "Architectural discussions with customers",
+        "Developing the server side of the platform",
+        "Creating an API to save user data, calculate and save their carbon footprint data",
+        "Integrating Stripe payment service",
+        "Deploying the API on Heroku cloud platform",
+        "Lead the team in development process",
+        "Optimizations/bug fixes"
+      ],
+      "technologies": [
+        "Angular",
+        "Bootstrap",
+        "TypeScript",
+        "Node.js",
+        "MongoDB",
+        "Stripe API",
+        "Heroku"
+      ]
+    },
+    {
+      "title": "International travel platform",
+      "startDate": "Nov 2020",
+      "endDate": "Jun 2021",
+      "sphere": "Web Frontend Development",
+      "description": "Development of a risk management platform for across international border travel.",
+      "roles": [
+        "Developing the client side of the travel manager portal",
+        "Created an interactive map to show risk score for each country",
+        "Created sorting data table for the travellers",
+        "Optimizations/bug fixes",
+        "Architectural discussions with customers tech lead",
+        "Lead the team in development process (team of 4 people)",
+        "Working with QA, Design team, clarify questions with them"
+      ],
+      "technologies": [
+        "Angular",
+        "Angular Material",
+        "TypeScript",
+        "Node.js",
+        "HTML",
+        "SCSS",
+        "amCharts",
+        "leaflet"
+      ]
+    },
+    {
+      "title": "HR & Payroll Automation System",
+      "startDate": "Jul 2017",
+      "endDate": "Nov 2020",
+      "sphere": "Full-stack Web Development",
+      "description": "Development of an HR & Payroll Automation System which automates the HR and payroll processes, including labor contract generation, attendance tracking, leave management and payroll processing",
+      "roles": [
+        "Development of Himnark People web application",
+        "Development of Himnark Workplace  web application (employee self service application)",
+        "Development of Himnark ID  web application (company management application)"
+      ],
+      "technologies": [
+        "Angular",
+        "Angular Material",
+        "TypeScript",
+        "Node.js",
+        "MongoDB",
+        "MongoJS",
+        "HTML",
+        "SCSS"
+      ]
     }
   ],
   "education": [
@@ -190,36 +327,6 @@
       "location": "Yerevan, Armenia",
       "startDate": "2012-09-01",
       "endDate": "2016-06-30"
-    }
-  ],
-  "skills": [
-    {
-      "name": "JavaScript",
-      "level": "Expert"
-    },
-    {
-      "name": "React",
-      "level": "Expert"
-    },
-    {
-      "name": "Node.js",
-      "level": "Expert"
-    },
-    {
-      "name": "MongoDB",
-      "level": "Expert"
-    },
-    {
-      "name": "Angular",
-      "level": "Intermediate"
-    },
-    {
-      "name": "Java",
-      "level": "Intermediate"
-    },
-    {
-      "name": "MySQL",
-      "level": "Intermediate"
     }
   ],
   "languages": [

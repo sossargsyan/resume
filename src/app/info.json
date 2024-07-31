@@ -349,7 +349,33 @@
       "level": "Don't speak at all"
     }
   ],
-  "interests": ["Football", "Hiking", "Cooking"],
+  "interestsOld": ["Football", "Hiking", "Fishing", "Cooking"],
+  "interests": [
+    {
+      "name": "Football",
+      "humorousDescription": "Weekend warrior on the field, where my tackling is slightly better than my post-game snack skills.",
+      "description": "I love playing football with my friends. It's a great way to stay active and have fun.",
+      "icon": "sports_soccer"
+    },
+    {
+      "name": "Hiking",
+      "humorousDescription": "I hike to burn off the calories from my cooking experiments. The views are just a bonus.",
+      "description": "I enjoy hiking in the mountains and exploring new trails. It's a great way to stay active and enjoy nature.",
+      "icon": "hiking"
+    },
+    {
+      "name": "Fishing",
+      "humorousDescription": "Patience enthusiast who believes in the stories about the 'Golden Fish'",
+      "description": "I love fishing in the rivers and lakes. It's a relaxing and peaceful way to spend time outdoors.",
+      "icon": "phishing"
+    },
+    {
+      "name": "Cooking",
+      "humorousDescription": "I cook to eat, and I eat to cook. It's a delicious cycle that I'm happy to be a part of.",
+      "description": "I enjoy cooking and trying out new recipes. It's a creative and rewarding way to relax and unwind after a long day.",
+      "icon": "soup_kitchen"
+    }
+  ],
   "contacts": [
     {
       "name": "GitHub",

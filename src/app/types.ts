@@ -50,6 +50,13 @@ export interface Language {
   level: string;
 }
 
+export interface Interest {
+  name: string;
+  description?: string;
+  humorousDescription?: string;
+  icon?: string;
+}
+
 export interface Contact {
   name: string;
   icon: string;
@@ -63,6 +70,6 @@ export interface Resume {
   experience: Experience[];
   education: Education[];
   languages: Language[];
-  interests: string[];
+  interests: Interest[];
   contacts: Contact[];
 }

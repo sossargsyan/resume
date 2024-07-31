@@ -34,7 +34,15 @@ body {
     font-weight: 500;
   }
   .devicon {
-    font-size: 6rem;
+    &-medium {
+      font-size: 3rem;
+    }
+    &-large {
+      font-size: 6rem;
+    }
+  }
+  .last-section {
+    height: calc(100vh - 110px);
   }
   // Apply the dark theme by default
   @include mat.all-component-themes($dark-theme);

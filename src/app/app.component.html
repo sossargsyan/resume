@@ -31,18 +31,28 @@
       @if (loading) {
       <mat-progress-bar mode="indeterminate"></mat-progress-bar>
       } @else {
-      <div id="about"></div>
-      <app-about [data]="resumeData.about"></app-about>
-      <div id="technologies"></div>
-      <app-technologies [data]="resumeData.technologies"></app-technologies>
-      <div id="experience"></div>
-      <app-experience [data]="resumeData.experience"></app-experience>
-      <div id="education"></div>
-      <app-education [data]="resumeData.education"></app-education>
-      <div id="languages"></div>
-      <app-languages [data]="resumeData.languages"></app-languages>
-      <div id="interests"></div>
-      <app-interests [data]="resumeData.interests"></app-interests>
+      <app-about id="about" [data]="resumeData.about"></app-about>
+      <app-technologies
+        id="technologies"
+        [data]="resumeData.technologies"
+      ></app-technologies>
+      <app-experience
+        id="experience"
+        [data]="resumeData.experience"
+      ></app-experience>
+      <app-education
+        id="education"
+        [data]="resumeData.education"
+      ></app-education>
+      <app-languages
+        id="languages"
+        [data]="resumeData.languages"
+      ></app-languages>
+      <app-interests
+        id="interests"
+        [data]="resumeData.interests"
+      ></app-interests>
+      <app-contacts id="contacts" [data]="resumeData.contacts"></app-contacts>
       }
     </div>
   </div>

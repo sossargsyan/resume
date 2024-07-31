@@ -1,0 +1,22 @@
+.edu-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .heading-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sub-heading {
+      display: flex;
+      gap: 16px;
+      .label-box {
+        width: 56px;
+      }
+    }
+  }
+}

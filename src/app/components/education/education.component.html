@@ -1,0 +1,29 @@
+<h1>Education</h1>
+<mat-card appearance="outlined">
+  <mat-card-content class="edu-card-content">
+    @for (item of data; track $index) {
+    <div class="info-container">
+      <div class="heading-box">
+        <h2>{{ item.school }}</h2>
+        <span>{{ item.startDate }} - {{ item.endDate }}</span>
+      </div>
+      <div class="sub-heading">
+        <div class="label-box">
+          <span>Major</span>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <b>{{ item.major }}</b>
+      </div>
+      <div class="sub-heading">
+        <div class="label-box">
+          <span>Degree</span>
+        </div>
+        <mat-divider [vertical]="true"></mat-divider>
+        <b>{{ item.degree }}</b>
+      </div>
+    </div>
+    @if ($index < data.length - 1) {
+    <mat-divider></mat-divider>
+    } }
+  </mat-card-content>
+</mat-card>

@@ -379,18 +379,18 @@
   "contacts": [
     {
       "name": "GitHub",
-      "url": "https://github.com/sossargsyan",
-      "icon": "github"
+      "link": "https://github.com/sossargsyan",
+      "icon": "github-original"
     },
     {
       "name": "LinkedIn",
-      "url": "https://www.linkedin.com/in/sossargsyan",
-      "icon": "linkedin"
+      "link": "https://www.linkedin.com/in/sossargsyan",
+      "icon": "linkedin-plain"
     },
     {
       "name": "Facebook",
-      "url": "https://www.facebook.com/sos.sargsyan.180",
-      "icon": "facebook"
+      "link": "https://www.facebook.com/sos.sargsyan.180",
+      "icon": "facebook-plain"
     }
   ]
 }

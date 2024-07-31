@@ -11,27 +11,27 @@
         <div class="info-item">
           <div class="item-key">Name</div>
           <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value">{{ data.fullName }}</div>
+          <div class="item-value semi-bold">{{ data.fullName }}</div>
         </div>
         <div class="info-item">
           <div class="item-key">Profession</div>
           <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value">{{ data.profession }}</div>
+          <div class="item-value semi-bold">{{ data.profession }}</div>
         </div>
         <div class="info-item">
           <div class="item-key">Email</div>
           <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value">{{ data.email }}</div>
+          <div class="item-value semi-bold">{{ data.email }}</div>
         </div>
         <div class="info-item">
           <div class="item-key">Phone</div>
           <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value">{{ data.phone }}</div>
+          <div class="item-value semi-bold">{{ data.phone }}</div>
         </div>
         <div class="info-item">
           <div class="item-key">Addresses</div>
           <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value">
+          <div class="item-value semi-bold">
             @for (address of data.addresses; track $index) {
             <span>{{ address }}</span>
             }

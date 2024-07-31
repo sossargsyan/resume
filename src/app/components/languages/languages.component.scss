@@ -1,4 +1,4 @@
-.edu-card-content {
+.lang-card-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -6,11 +6,6 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    .heading-box {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
     .sub-heading {
       display: flex;
       gap: 16px;

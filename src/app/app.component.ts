@@ -15,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
+import { LanguagesComponent } from './components/languages/languages.component';
 
 @Component({
   selector: 'app-root',
@@ -33,6 +34,7 @@ import { EducationComponent } from './components/education/education.component';
     TechnologiesComponent,
     ExperienceComponent,
     EducationComponent,
+    LanguagesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

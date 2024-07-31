@@ -27,7 +27,6 @@
     <app-side-menu></app-side-menu>
   </mat-drawer>
   <div class="main-sidenav-content">
-    <mat-divider [vertical]="true"></mat-divider>
     <div class="main-content">
       @if (loading) {
       <mat-progress-bar mode="indeterminate"></mat-progress-bar>
@@ -38,6 +37,8 @@
       <app-technologies [data]="resumeData.technologies"></app-technologies>
       <div id="experience"></div>
       <app-experience [data]="resumeData.experience"></app-experience>
+      <div id="education"></div>
+      <app-education [data]="resumeData.education"></app-education>
       }
     </div>
   </div>

@@ -12,6 +12,6 @@ import { Experience } from '../../types';
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.scss',
 })
-export class experienceComponent {
+export class ExperienceComponent {
   @Input() data!: Experience[];
 }

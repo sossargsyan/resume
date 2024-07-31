@@ -41,7 +41,6 @@ export interface Education {
   degree: string;
   major: string;
   school: string;
-  location: string;
   startDate: string;
   endDate: string;
 }

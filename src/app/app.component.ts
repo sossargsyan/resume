@@ -13,7 +13,8 @@ import { JsonReaderService } from './services/json-reader.service';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { AboutComponent } from './components/about/about.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
-import { experienceComponent } from './components/experience/experience.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
 
 @Component({
   selector: 'app-root',
@@ -30,7 +31,8 @@ import { experienceComponent } from './components/experience/experience.componen
     SideMenuComponent,
     AboutComponent,
     TechnologiesComponent,
-    experienceComponent,
+    ExperienceComponent,
+    EducationComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -313,20 +313,18 @@
   ],
   "education": [
     {
-      "degree": "Bachelor of Science",
-      "major": "Computer Science",
-      "school": "State Engineering University of Armenia",
-      "location": "Yerevan, Armenia",
-      "startDate": "2012-09-01",
-      "endDate": "2016-06-30"
+      "degree": "Software Engineer",
+      "major": "Software Engineering",
+      "school": "Instigate Training Center",
+      "startDate": "Nov 2011",
+      "endDate": "Mar 2012"
     },
     {
-      "degree": "Bachelor of Science",
-      "major": "Computer Science",
-      "school": "State Engineering University of Armenia",
-      "location": "Yerevan, Armenia",
-      "startDate": "2012-09-01",
-      "endDate": "2016-06-30"
+      "degree": "Bachelor",
+      "major": "Mathematics and Mechanics",
+      "school": "Artsakh State University",
+      "startDate": "2007",
+      "endDate": "2013"
     }
   ],
   "languages": [

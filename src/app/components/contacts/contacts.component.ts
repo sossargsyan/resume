@@ -10,11 +10,12 @@ import {
 } from '@angular/animations';
 
 import { Contact } from '../../types';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-contacts',
   standalone: true,
-  imports: [MatCardModule, MatChipsModule],
+  imports: [MatCardModule, MatChipsModule, MatIconModule],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.scss',
   animations: [

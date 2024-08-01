@@ -13,9 +13,10 @@
         @if (hoveredIndex === $index) {
         <mat-chip-set aria-label="Link" [@fadeInOut]>
           <mat-chip>
-            <a [href]="item.link" target="_blank" class="contact-link">{{
-              item.link
-            }}</a>
+            <a [href]="item.link" target="_blank" class="contact-link">
+              {{ item.link }}
+              <mat-icon>open_in_new</mat-icon>
+            </a>
           </mat-chip>
         </mat-chip-set>
         }

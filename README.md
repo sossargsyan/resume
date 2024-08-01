@@ -1,27 +1,46 @@
 # Resume
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+This project is a personal resume web application built using Angular and Angular Material. It provides a clean and responsive design to showcase your professional experience, skills, and projects. Users can clone this repository and run it locally to customize it with their own information.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Responsive Design**: The app is designed to look great on both desktop and mobile devices.
+- **Angular & Angular Material**: Built with the latest Angular framework and Angular Material for a modern UI/UX.
+- **Easy Customization**: Update the `info.json` file to personalize the content with your own details.
+- **Components**: Well-structured components to organize various sections like Education, Work Experience, Skills, and Projects.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+Before you begin, ensure you have met the following requirements:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- [Node.js](https://nodejs.org/) (version 20.11.1 or higher)
+- [Angular CLI](https://angular.io/cli) (version 18.1.0 or higher)
 
-## Running unit tests
+### Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. **Clone the Repository**
 
-## Running end-to-end tests
+   ```bash
+   git clone git@github.com:sossargsyan/resume.git
+   cd resume
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+2. **Install Dependencies**
 
-## Further help
+   ```bash
+   npm install
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+3. **Run the Application**
+   Start the development server:
+   ```bash
+   ng serve
+   ```
+
+### Contributing
+
+Contributions are welcome! Feel free to open an issue or submit a pull request if you have suggestions or improvements.
+
+Made with ❤️ by [Sos Sargsyan](https://github.com/sossargsyan)

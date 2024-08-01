@@ -1,54 +1,40 @@
 <h1>About</h1>
-<mat-card appearance="outlined">
+<mat-card appearance="outlined" class="about-card">
   <mat-card-content class="about-card-content">
-    <div class="box box-top">
+    <div class="top-box">
       <img
         src="assets/images/avatar.jpg"
         alt="Avatar picture"
         class="avatar-img"
       />
       <div class="info-container">
-        <div class="info-item">
-          <div class="item-key">Name</div>
-          <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value semi-bold">{{ data.fullName }}</div>
+        <div class="name-box">
+          <span class="semi-bold my-name">{{ data.fullName }}</span>
+          <span class="my-position">{{ data.profession }}</span>
         </div>
-        <div class="info-item">
-          <div class="item-key">Profession</div>
-          <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value semi-bold">{{ data.profession }}</div>
-        </div>
-        <div class="info-item">
-          <div class="item-key">Email</div>
-          <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value semi-bold">{{ data.email }}</div>
-        </div>
-        <div class="info-item">
-          <div class="item-key">Phone</div>
-          <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value semi-bold">{{ data.phone }}</div>
-        </div>
-        <div class="info-item">
-          <div class="item-key">Addresses</div>
-          <mat-divider [vertical]="true"></mat-divider>
-          <div class="item-value semi-bold">
-            @for (address of data.addresses; track $index) {
-            <span>{{ address }}</span>
-            }
+        <div class="info-box">
+          <div class="info-item">
+            <mat-icon>email</mat-icon>
+            <mat-divider [vertical]="true"></mat-divider>
+            <div class="item-value">{{ data.email }}</div>
+          </div>
+          <div class="info-item">
+            <mat-icon>phone</mat-icon>
+            <mat-divider [vertical]="true"></mat-divider>
+            <div class="item-value">{{ data.phone }}</div>
+          </div>
+          <div class="info-item">
+            <mat-icon>pin_drop</mat-icon>
+            <mat-divider [vertical]="true"></mat-divider>
+            <div class="item-value">
+              @for (address of data.addresses; track $index) {
+              <span>{{ address }}</span>
+              }
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="info-container">
-      <p>
-        Experienced and results-oriented Full-Stack Software Engineer with over
-        8 years of experience in designing, developing, and maintaining
-        enterprise-level applications. Skilled in both front-end and back-end
-        development, adept at implementing and optimizing scalable solutions.
-        Proven ability to lead cross-functional teams and deliver high-quality
-        software projects on time. Extensive experience in developing web
-        applications for clients in the USA, EU, Australia and Armenia.
-      </p>
-    </div>
+    <span>{{ data.summary }}</span>
   </mat-card-content>
 </mat-card>

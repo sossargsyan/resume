@@ -49,12 +49,30 @@ body {
   .main-header {
     background-color: #810081;
   }
+  .about-card {
+    background-image: linear-gradient(
+      to bottom,
+      #554151 0,
+      #554151 140px,
+      transparent 140px,
+      transparent 100%
+    );
+  }
 
   // Apply the light theme only when the user prefers light themes.
   .light-theme {
     @include mat.all-component-colors($light-theme);
     .main-header {
       background-color: #d7e3ff;
+    }
+    .about-card {
+      background-image: linear-gradient(
+        to bottom,
+        #dae2f9 0,
+        #dae2f9 140px,
+        transparent 140px,
+        transparent 100%
+      );
     }
   }
 }

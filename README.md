@@ -16,7 +16,7 @@ This project is a personal resume web application built using Angular and Angula
 Before you begin, ensure you have met the following requirements:
 
 - [Node.js](https://nodejs.org/) (version 20.11.1 or higher)
-- [Angular CLI](https://angular.io/cli) (version 18.1.0 or higher)
+- [Angular CLI](https://angular.dev/tools/cli) (version 18.1.0 or higher)
 
 ### Installation
 

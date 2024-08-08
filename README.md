@@ -6,7 +6,7 @@ This project is a personal resume web application built using Angular and Angula
 
 - **Responsive Design**: The app is designed to look great on both desktop and mobile devices.
 - **Angular & Angular Material**: Built with the latest Angular framework and Angular Material for a modern UI/UX.
-- **Easy Customization**: Update the `info.json` file to personalize the content with your own details.
+- **Easy Customization**: Update the `src/app/info.json` file to personalize the content with your own details.
 - **Components**: Well-structured components to organize various sections like Education, Work Experience, Skills, and Projects.
 
 ## Getting Started

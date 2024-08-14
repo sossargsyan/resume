@@ -17,7 +17,7 @@ import { ExperienceComponent } from './components/experience/experience.componen
 import { EducationComponent } from './components/education/education.component';
 import { LanguagesComponent } from './components/languages/languages.component';
 import { InterestsComponent } from './components/interests/interests.component';
-import { ContactsComponent } from './components/contacts/contacts.component';
+import { ConnectComponent } from './components/connect/connect.component';
 
 @Component({
   selector: 'app-root',
@@ -38,7 +38,7 @@ import { ContactsComponent } from './components/contacts/contacts.component';
     EducationComponent,
     LanguagesComponent,
     InterestsComponent,
-    ContactsComponent,
+    ConnectComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

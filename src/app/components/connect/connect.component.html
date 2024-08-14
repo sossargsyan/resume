@@ -1,7 +1,7 @@
 <div class="last-section">
-  <h1>Contacts</h1>
+  <h1>Connect</h1>
   <mat-card appearance="outlined">
-    <mat-card-content class="contact-card-content">
+    <mat-card-content class="connect-card-content">
       @for (item of data; track $index) {
       <div
         class="sub-heading"
@@ -13,7 +13,7 @@
         @if (hoveredIndex === $index) {
         <mat-chip-set aria-label="Link" [@fadeInOut]>
           <mat-chip>
-            <a [href]="item.link" target="_blank" class="contact-link">
+            <a [href]="item.link" target="_blank" class="connect-link">
               {{ item.link }}
               <mat-icon>open_in_new</mat-icon>
             </a>

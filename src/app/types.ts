@@ -57,7 +57,7 @@ export interface Interest {
   icon?: string;
 }
 
-export interface Contact {
+export interface ConnectItem {
   name: string;
   icon: string;
   link: string;
@@ -71,5 +71,5 @@ export interface Resume {
   education: Education[];
   languages: Language[];
   interests: Interest[];
-  contacts: Contact[];
+  connect: ConnectItem[];
 }

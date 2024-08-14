@@ -9,15 +9,15 @@ import {
   animate,
 } from '@angular/animations';
 
-import { Contact } from '../../types';
+import { ConnectItem } from '../../types';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-contacts',
+  selector: 'app-connect',
   standalone: true,
   imports: [MatCardModule, MatChipsModule, MatIconModule],
-  templateUrl: './contacts.component.html',
-  styleUrl: './contacts.component.scss',
+  templateUrl: './connect.component.html',
+  styleUrl: './connect.component.scss',
   animations: [
     trigger('fadeInOut', [
       state('void', style({ opacity: 0 })),
@@ -26,7 +26,7 @@ import { MatIconModule } from '@angular/material/icon';
     ]),
   ],
 })
-export class ContactsComponent {
-  @Input() data!: Contact[];
+export class ConnectComponent {
+  @Input() data!: ConnectItem[];
   hoveredIndex: number | null = null;
 }

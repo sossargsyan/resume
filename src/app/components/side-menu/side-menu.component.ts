@@ -4,8 +4,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { ActivatedRoute, Router } from '@angular/router';
 
-import { MenuItem } from '../../types';
 import { sections } from '../../constants';
+import { MenuItem } from '../../types';
 
 @Component({
   selector: 'app-side-menu',

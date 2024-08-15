@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import {
@@ -27,6 +27,6 @@ import { MatIconModule } from '@angular/material/icon';
   ],
 })
 export class ConnectComponent {
-  @Input() data!: ConnectItem[];
-  hoveredIndex: number | null = null;
+  data = input.required<ConnectItem[]>();
+  hoveredIndex = signal<number | null>(null);
 }

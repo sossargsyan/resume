@@ -1,7 +1,7 @@
 <h1>Interests</h1>
 <mat-card appearance="outlined">
   <mat-card-content class="int-card-content">
-    @for (item of data; track $index) {
+    @for (item of data(); track $index) {
     <div class="info-container">
       <div class="sub-heading">
         <div class="label-box">
@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    @if ($index < data.length - 1) {
+    @if (!$last) {
     <mat-divider></mat-divider>
     } }
   </mat-card-content>

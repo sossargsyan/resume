@@ -1,7 +1,7 @@
 <h1>Education</h1>
 <mat-card appearance="outlined">
   <mat-card-content class="edu-card-content">
-    @for (item of data; track $index) {
+    @for (item of data(); track $index) {
     <div class="info-container">
       <div class="heading-box">
         <h3>{{ item.school }}</h3>
@@ -22,7 +22,7 @@
         <span class="semi-bold">{{ item.degree }}</span>
       </div>
     </div>
-    @if ($index < data.length - 1) {
+    @if (!$last) {
     <mat-divider></mat-divider>
     } }
   </mat-card-content>

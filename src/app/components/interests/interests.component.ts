@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
@@ -13,5 +13,5 @@ import { MatIconModule } from '@angular/material/icon';
   styleUrl: './interests.component.scss',
 })
 export class InterestsComponent {
-  @Input() data!: Interest[];
+  data = input.required<Interest[]>();
 }

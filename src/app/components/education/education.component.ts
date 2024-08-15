@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 
@@ -12,5 +12,5 @@ import { Education } from '../../types';
   styleUrl: './education.component.scss',
 })
 export class EducationComponent {
-  @Input() data!: Education[];
+  data = input.required<Education[]>();
 }

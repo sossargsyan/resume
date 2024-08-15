@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
@@ -13,5 +13,5 @@ import { About } from '../../types';
   styleUrl: './about.component.scss',
 })
 export class AboutComponent {
-  @Input() data!: About;
+  data = input.required<About>();
 }

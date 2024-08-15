@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 
 import { Technology } from '../../types';
@@ -11,5 +11,6 @@ import { Technology } from '../../types';
   styleUrl: './technologies.component.scss',
 })
 export class TechnologiesComponent {
-  @Input() data!: Technology[];
+  // @Input() data!: Technology[];
+  data = input.required<Technology[]>();
 }

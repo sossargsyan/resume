@@ -9,25 +9,25 @@
       />
       <div class="info-container">
         <div class="name-box">
-          <span class="semi-bold my-name">{{ data.fullName }}</span>
-          <span class="my-position">{{ data.profession }}</span>
+          <span class="semi-bold my-name">{{ data().fullName }}</span>
+          <span class="my-position">{{ data().profession }}</span>
         </div>
         <div class="info-box">
           <div class="info-item">
             <mat-icon>email</mat-icon>
             <mat-divider [vertical]="true"></mat-divider>
-            <div class="item-value">{{ data.email }}</div>
+            <div class="item-value">{{ data().email }}</div>
           </div>
           <div class="info-item">
             <mat-icon>phone</mat-icon>
             <mat-divider [vertical]="true"></mat-divider>
-            <div class="item-value">{{ data.phone }}</div>
+            <div class="item-value">{{ data().phone }}</div>
           </div>
           <div class="info-item">
             <mat-icon>pin_drop</mat-icon>
             <mat-divider [vertical]="true"></mat-divider>
             <div class="item-value">
-              @for (address of data.addresses; track $index) {
+              @for (address of data().addresses; track $index) {
               <span>{{ address }}</span>
               }
             </div>
@@ -35,6 +35,6 @@
         </div>
       </div>
     </div>
-    <span>{{ data.summary }}</span>
+    <span>{{ data().summary }}</span>
   </mat-card-content>
 </mat-card>

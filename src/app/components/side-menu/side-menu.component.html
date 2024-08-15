@@ -1,10 +1,10 @@
 <mat-nav-list>
-  @for (item of sections; track $index) {
+  @for (item of menuList(); track $index) {
   <mat-list-item
-    [activated]="item.route === activeSection"
+    [activated]="item.route === activeSection()"
     (click)="onItemClicked(item)"
     class="item"
-    [class]="{ active: item.route === activeSection }"
+    [class]="{ active: item.route === activeSection() }"
   >
     <button mat-button class="item-btn">
       <mat-icon>{{ item.icon }}</mat-icon>

@@ -1,7 +1,7 @@
 <h1>Technologies</h1>
 <mat-card appearance="outlined">
   <mat-card-content class="tech-card-content">
-    @for (item of data; track $index) {
+    @for (item of data(); track $index) {
     <div class="tech-section">
       <h4>{{ item.name }}</h4>
       <div class="icon-cards-container">

@@ -2,15 +2,15 @@
   <h1>Connect</h1>
   <mat-card appearance="outlined">
     <mat-card-content class="connect-card-content">
-      @for (item of data; track $index) {
+      @for (item of data(); track $index) {
       <div
         class="sub-heading"
-        (mouseover)="hoveredIndex = $index"
-        (mouseleave)="hoveredIndex = null"
+        (mouseover)="hoveredIndex.set($index)"
+        (mouseleave)="hoveredIndex.set(null)"
       >
         <i class="devicon-medium devicon-{{ item.icon }} colored"></i>
         <span class="semi-bold">{{ item.name }}</span>
-        @if (hoveredIndex === $index) {
+        @if (hoveredIndex() === $index) {
         <mat-chip-set aria-label="Link" [@fadeInOut]>
           <mat-chip>
             <a [href]="item.link" target="_blank" class="connect-link">

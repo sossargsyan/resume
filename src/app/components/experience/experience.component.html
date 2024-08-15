@@ -1,7 +1,7 @@
 <h1>Experience</h1>
 <mat-card appearance="outlined">
   <mat-card-content class="experience-card-content">
-    @for (item of data; track $index) {
+    @for (item of data(); track $index) {
     <div class="info-container">
       <h2>{{ item.title }}</h2>
       <div class="sub-heading">
@@ -29,7 +29,7 @@
         </mat-chip-set>
       </div>
     </div>
-    @if ($index < data.length - 1) {
+    @if (!$last) {
     <mat-divider></mat-divider>
     } }
   </mat-card-content>

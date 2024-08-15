@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule } from '@angular/material/chips';
@@ -13,5 +13,5 @@ import { Experience } from '../../types';
   styleUrl: './experience.component.scss',
 })
 export class ExperienceComponent {
-  @Input() data!: Experience[];
+  data = input.required<Experience[]>();
 }

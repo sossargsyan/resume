@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
@@ -15,8 +15,10 @@ import { MenuItem } from '../../types';
   styleUrl: './side-menu.component.scss',
 })
 export class SideMenuComponent implements OnInit {
-  sections: MenuItem[] = sections;
-  activeSection: string = sections[0].route;
+  // sections: MenuItem[] = sections;
+  menuList = signal<MenuItem[]>(sections);
+  // activeSection: string = sections[0].route;
+  activeSection = signal<string>(sections[0].route);
 
   constructor(private _route: ActivatedRoute, private _router: Router) {}
 
@@ -27,7 +29,7 @@ export class SideMenuComponent implements OnInit {
   scrollToSection(route: string) {
     const element = document.getElementById(route);
     if (element) {
-      this.activeSection = route;
+      this.activeSection.set(route);
       element.scrollIntoView({ behavior: 'smooth' });
       this._router.navigate([], {
         fragment: route,

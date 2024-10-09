@@ -17,6 +17,6 @@ export class AboutComponent {
   data = input.required<About>();
 
   openCertificate(image: string) {
-    window.open(`/assets/images/certificates/${image}`, '_blank');
+    window.open(`./assets/images/certificates/${image}`, '_blank');
   }
 }

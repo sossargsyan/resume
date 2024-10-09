@@ -36,5 +36,35 @@
       </div>
     </div>
     <span>{{ data().summary }}</span>
+    @if (data().certificates?.length) {
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <mat-icon>workspace_premium</mat-icon>
+          </mat-panel-title>
+          <mat-panel-description>View certificates</mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="certificates">
+          @for (certificate of data().certificates; track $index) {
+          <mat-card
+            appearance="outlined"
+            class="certificate-item"
+            (click)="openCertificate(certificate.image)"
+          >
+            <mat-card-content class="certificate-item-content">
+              <img
+                [src]="'assets/images/certificates/' + certificate.image"
+                [alt]="certificate.name"
+                class="certificate-img"
+              />
+              <span>{{ certificate.name }}</span>
+            </mat-card-content>
+          </mat-card>
+          }
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    }
   </mat-card-content>
 </mat-card>

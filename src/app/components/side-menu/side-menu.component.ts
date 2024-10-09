@@ -15,9 +15,7 @@ import { MenuItem } from '../../types';
   styleUrl: './side-menu.component.scss',
 })
 export class SideMenuComponent implements OnInit {
-  // sections: MenuItem[] = sections;
   menuList = signal<MenuItem[]>(sections);
-  // activeSection: string = sections[0].route;
   activeSection = signal<string>(sections[0].route);
 
   constructor(private _route: ActivatedRoute, private _router: Router) {}

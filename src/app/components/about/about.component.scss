@@ -44,4 +44,23 @@
       }
     }
   }
+  .certificates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    .certificate-item {
+      cursor: pointer;
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        img {
+          width: 100px;
+          height: 75px;
+        }
+      }
+    }
+  }
 }

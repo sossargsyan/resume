@@ -9,6 +9,12 @@ export interface MenuItem {
   route: string;
 }
 
+export interface Certificate {
+  name: string;
+  source: string;
+  image: string;
+}
+
 export interface About {
   fullName: string;
   profession: string;
@@ -16,6 +22,7 @@ export interface About {
   phone: string;
   addresses: string[];
   summary: string;
+  certificates?: Certificate[];
 }
 
 export interface TechItem {

@@ -11,6 +11,5 @@ import { Technology } from '../../types';
   styleUrl: './technologies.component.scss',
 })
 export class TechnologiesComponent {
-  // @Input() data!: Technology[];
   data = input.required<Technology[]>();
 }

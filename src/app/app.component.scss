@@ -21,6 +21,9 @@
   height: calc(100% - 65px);
   .main-sidenav {
     padding: 8px 16px;
+    .menu-divider {
+      padding: 8px 0;
+    }
   }
   .main-sidenav-content {
     display: flex;

@@ -44,6 +44,11 @@ body {
   .last-section {
     height: calc(100vh - 110px);
   }
+  .mat-drawer-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   // Apply the dark theme by default
   @include mat.all-component-themes($dark-theme);

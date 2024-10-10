@@ -50,6 +50,7 @@ export class AppComponent implements OnInit {
   isDarkMode: boolean = this.currentTheme === ThemeType.Dark;
   loading: boolean = true;
   resumeData!: Resume;
+  appVersion!: string;
 
   constructor(private _jsonReaderService: JsonReaderService) {}
 
@@ -68,6 +69,9 @@ export class AppComponent implements OnInit {
     this._jsonReaderService.getInfo().subscribe((data) => {
       this.resumeData = data;
       this.loading = false;
+    });
+    this._jsonReaderService.getAppVersion().subscribe((version) => {
+      this.appVersion = version;
     });
   }
 }

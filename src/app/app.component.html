@@ -7,6 +7,10 @@
   </div>
   <div class="middle-side"></div>
   <div class="right-side">
+    <button mat-stroked-button (click)="downloadPdf()">
+      <mat-icon>picture_as_pdf</mat-icon>
+      Export PDF
+    </button>
     <button
       mat-icon-button
       (click)="toggleTheme()"

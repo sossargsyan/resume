@@ -10,6 +10,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 import { Resume, ThemeType } from './types';
 import { JsonReaderService } from './services/json-reader.service';
+import { PdfGeneratorService } from './services/pdf-generator.service';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
 import { AboutComponent } from './components/about/about.component';
 import { TechnologiesComponent } from './components/technologies/technologies.component';
@@ -52,7 +53,20 @@ export class AppComponent implements OnInit {
   resumeData!: Resume;
   appVersion!: string;
 
-  constructor(private _jsonReaderService: JsonReaderService) {}
+  constructor(
+    private _jsonReaderService: JsonReaderService,
+    private _pdfGeneratorService: PdfGeneratorService
+  ) {}
+
+  ngOnInit(): void {
+    this._jsonReaderService.getInfo().subscribe((data) => {
+      this.resumeData = data;
+      this.loading = false;
+    });
+    this._jsonReaderService.getAppVersion().subscribe((version) => {
+      this.appVersion = version;
+    });
+  }
 
   toggleTheme() {
     this.isDarkMode = !this.isDarkMode;
@@ -65,13 +79,7 @@ export class AppComponent implements OnInit {
     }
   }
 
-  ngOnInit(): void {
-    this._jsonReaderService.getInfo().subscribe((data) => {
-      this.resumeData = data;
-      this.loading = false;
-    });
-    this._jsonReaderService.getAppVersion().subscribe((version) => {
-      this.appVersion = version;
-    });
+  downloadPdf() {
+    this._pdfGeneratorService.generateResume(this.resumeData);
   }
 }

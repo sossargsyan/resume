@@ -11,6 +11,11 @@
       line-height: normal;
     }
   }
+  .right-side {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
 }
 .main-container {
   height: calc(100% - 65px);

@@ -147,6 +147,6 @@ export class PdfGeneratorService {
     });
 
     // Save the PDF
-    doc.save(`${data.title}.pdf'`);
+    doc.save(`${data.title}.pdf`);
   }
 }

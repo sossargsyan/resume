@@ -175,6 +175,25 @@
   ],
   "experience": [
     {
+      "title": "DevOps Tooling",
+      "startDate": "Mar 2024",
+      "endDate": "Present",
+      "sphere": "Full-stack Development",
+      "description": "Automated installation of tools in an on-premises environment without internet access.",
+      "roles": ["Architecture discussion.", "Feature implementation."],
+      "technologies": [
+        "React",
+        "React Admin",
+        "Zustand",
+        "Node.js",
+        "Express.js",
+        "Tauri",
+        "MongoDB",
+        "Ansible",
+        "Jinja"
+      ]
+    },
+    {
       "title": "Web and Mobile applications development",
       "startDate": "Jan 2024",
       "endDate": "Mar 2024",

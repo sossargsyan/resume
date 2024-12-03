@@ -13,16 +13,19 @@
           <span class="my-position">{{ data().profession }}</span>
         </div>
         <div class="info-box">
+          @if (data().email) {
           <div class="info-item">
             <mat-icon>email</mat-icon>
             <mat-divider [vertical]="true"></mat-divider>
             <div class="item-value">{{ data().email }}</div>
           </div>
+          } @if (data().phone) {
           <div class="info-item">
             <mat-icon>phone</mat-icon>
             <mat-divider [vertical]="true"></mat-divider>
             <div class="item-value">{{ data().phone }}</div>
           </div>
+          } @if (data().addresses && data().addresses.length) {
           <div class="info-item">
             <mat-icon>pin_drop</mat-icon>
             <mat-divider [vertical]="true"></mat-divider>
@@ -32,6 +35,7 @@
               }
             </div>
           </div>
+          }
         </div>
       </div>
     </div>

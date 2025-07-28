@@ -22,6 +22,11 @@
         "name": "PWA",
         "source": "Udemy",
         "image": "pwa.jpg"
+      },
+      {
+        "name": "Security",
+        "source": "KnowBe4",
+        "image": "security.png"
       }
     ]
   },
@@ -175,9 +180,29 @@
   ],
   "experience": [
     {
+      "title": "Aviation Analytics Platform",
+      "startDate": "Mar 2025",
+      "endDate": "Present",
+      "sphere": "Full-stack Development",
+      "description": "Development of an aviation analytics platform that provides key performance metrics for airports, airlines and flight movements. The platform includes a modern React-based dashboard and a robust REST API.",
+      "roles": ["Requirements creation.", "Test cases creation.", "Feature implementation.", "Testing."],
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "Zod",
+        "Drizzle ORM",
+        "PostgreSQL",
+        "React",
+        "Material UI",
+        "Storybook",
+        "Mocha"
+      ]
+    },
+    {
       "title": "DevOps Tooling",
       "startDate": "Mar 2024",
-      "endDate": "Present",
+      "endDate": "Mar 2025",
       "sphere": "Full-stack Development",
       "description": "Automated installation of tools in an on-premises environment without internet access.",
       "roles": ["Architecture discussion.", "Feature implementation."],

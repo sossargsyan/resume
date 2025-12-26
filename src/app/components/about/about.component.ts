@@ -8,17 +8,16 @@ import { NgOptimizedImage } from '@angular/common';
 import { About } from '../../types';
 
 @Component({
-  selector: 'app-about',
-  standalone: true,
-  imports: [
-    MatCardModule,
-    MatDividerModule,
-    MatIconModule,
-    MatExpansionModule,
-    NgOptimizedImage,
-  ],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.scss',
+    selector: 'app-about',
+    imports: [
+        MatCardModule,
+        MatDividerModule,
+        MatIconModule,
+        MatExpansionModule,
+        NgOptimizedImage,
+    ],
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.scss'
 })
 export class AboutComponent {
   data = input.required<About>();

@@ -8,11 +8,10 @@ import { sections } from '../../constants';
 import { MenuItem } from '../../types';
 
 @Component({
-  selector: 'app-side-menu',
-  standalone: true,
-  imports: [MatListModule, MatButtonModule, MatIconModule],
-  templateUrl: './side-menu.component.html',
-  styleUrl: './side-menu.component.scss',
+    selector: 'app-side-menu',
+    imports: [MatListModule, MatButtonModule, MatIconModule],
+    templateUrl: './side-menu.component.html',
+    styleUrl: './side-menu.component.scss'
 })
 export class SideMenuComponent implements OnInit {
   menuList = signal<MenuItem[]>(sections);

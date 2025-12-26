@@ -5,11 +5,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { Language } from '../../types';
 
 @Component({
-  selector: 'app-languages',
-  standalone: true,
-  imports: [MatCardModule, MatDividerModule],
-  templateUrl: './languages.component.html',
-  styleUrl: './languages.component.scss',
+    selector: 'app-languages',
+    imports: [MatCardModule, MatDividerModule],
+    templateUrl: './languages.component.html',
+    styleUrl: './languages.component.scss'
 })
 export class LanguagesComponent {
   data = input.required<Language[]>();

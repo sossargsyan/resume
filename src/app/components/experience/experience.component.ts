@@ -6,11 +6,10 @@ import { MatChipsModule } from '@angular/material/chips';
 import { Experience } from '../../types';
 
 @Component({
-  selector: 'app-experience',
-  standalone: true,
-  imports: [MatCardModule, MatDividerModule, MatChipsModule],
-  templateUrl: './experience.component.html',
-  styleUrl: './experience.component.scss',
+    selector: 'app-experience',
+    imports: [MatCardModule, MatDividerModule, MatChipsModule],
+    templateUrl: './experience.component.html',
+    styleUrl: './experience.component.scss'
 })
 export class ExperienceComponent {
   data = input.required<Experience[]>();

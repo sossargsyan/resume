@@ -21,28 +21,27 @@ import { InterestsComponent } from './components/interests/interests.component';
 import { ConnectComponent } from './components/connect/connect.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [
-    RouterOutlet,
-    MatSidenavModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    MatDividerModule,
-    MatTooltipModule,
-    MatProgressBarModule,
-    SideMenuComponent,
-    AboutComponent,
-    TechnologiesComponent,
-    ExperienceComponent,
-    EducationComponent,
-    LanguagesComponent,
-    InterestsComponent,
-    ConnectComponent,
-  ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+    selector: 'app-root',
+    imports: [
+        RouterOutlet,
+        MatSidenavModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatIconModule,
+        MatDividerModule,
+        MatTooltipModule,
+        MatProgressBarModule,
+        SideMenuComponent,
+        AboutComponent,
+        TechnologiesComponent,
+        ExperienceComponent,
+        EducationComponent,
+        LanguagesComponent,
+        InterestsComponent,
+        ConnectComponent,
+    ],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
   @HostBinding('class')

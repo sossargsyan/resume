@@ -1,5 +1,4 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -23,7 +22,6 @@ import { ConnectComponent } from './components/connect/connect.component';
 @Component({
     selector: 'app-root',
     imports: [
-        RouterOutlet,
         MatSidenavModule,
         MatToolbarModule,
         MatButtonModule,

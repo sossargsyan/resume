@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit, signal } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -20,26 +20,26 @@ import { InterestsComponent } from './components/interests/interests.component';
 import { ConnectComponent } from './components/connect/connect.component';
 
 @Component({
-    selector: 'app-root',
-    imports: [
-        MatSidenavModule,
-        MatToolbarModule,
-        MatButtonModule,
-        MatIconModule,
-        MatDividerModule,
-        MatTooltipModule,
-        MatProgressBarModule,
-        SideMenuComponent,
-        AboutComponent,
-        TechnologiesComponent,
-        ExperienceComponent,
-        EducationComponent,
-        LanguagesComponent,
-        InterestsComponent,
-        ConnectComponent,
-    ],
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss'
+  selector: 'app-root',
+  imports: [
+    MatSidenavModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
+    MatTooltipModule,
+    MatProgressBarModule,
+    SideMenuComponent,
+    AboutComponent,
+    TechnologiesComponent,
+    ExperienceComponent,
+    EducationComponent,
+    LanguagesComponent,
+    InterestsComponent,
+    ConnectComponent,
+  ],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
   @HostBinding('class')
@@ -47,6 +47,7 @@ export class AppComponent implements OnInit {
     (localStorage.getItem('theme') as ThemeType) || ThemeType.Dark;
   isDarkMode: boolean = this.currentTheme === ThemeType.Dark;
   loading: boolean = true;
+  generatingPdf = signal<boolean>(false);
   resumeData!: Resume;
   appVersion!: string;
 
@@ -76,7 +77,18 @@ export class AppComponent implements OnInit {
     }
   }
 
-  downloadPdf() {
-    this._pdfGeneratorService.generateResume(this.resumeData);
+  async downloadPdf() {
+    this.generatingPdf.set(true);
+    try {
+      await this._pdfGeneratorService.generateAiResume(this.resumeData);
+    } catch (error) {
+      console.error(
+        'AI PDF Generation failed, falling back to simple PDF',
+        error
+      );
+      this._pdfGeneratorService.generateResume(this.resumeData);
+    } finally {
+      this.generatingPdf.set(false);
+    }
   }
 }

@@ -27,9 +27,11 @@
     <div class="main-sidenav-top">
       <app-side-menu></app-side-menu>
       <mat-divider class="menu-divider"></mat-divider>
-      <button mat-button (click)="downloadPdf()">
-        <mat-icon>picture_as_pdf</mat-icon>
-        Export as PDF
+      <button mat-button (click)="downloadPdf()" [disabled]="generatingPdf()">
+        <mat-icon>{{
+          generatingPdf() ? "hourglass_empty" : "picture_as_pdf"
+        }}</mat-icon>
+        {{ generatingPdf() ? "Designing Resume..." : "Generate with AI and export as PDF" }}
       </button>
     </div>
     <span>Version: {{ appVersion }}</span>
